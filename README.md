@@ -1,2 +1,0 @@
-# slusts.github.io
-CND
