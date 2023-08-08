@@ -1,0 +1,222 @@
+/******************************************************
+ * TITLE: cssStyle.css
+ * STUDENT NAME: Stephen Razon
+ * COURSE: CSC334
+ * DESCRIPTION: This is the css file for the assignment
+ * REFERENCES: Murach's HTML5 and CSS3 (4th Edition)
+ ******************************************************/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 90%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border: 1em solid navy;
+}
+
+/* MOBILE MENU - initially hidden*/
+#mobileMenu {
+    display: none;
+}
+
+/* TABLET PORTRAIT TO STD */
+@media only screen and (max-width: 959px) {
+    #navMenu li a {font-size: .875em; }
+}
+
+/* MOBILE LANDSCAPE TO TABLE PORTRAIT */
+@media only screen and (max-width: 767px) {
+    #navMenu { display: none; }
+    #mobileMenu { display: block; }
+    .slicknav_menu {background-color: #facd8a !important;}
+    body {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    header, footer p {text-align: center}
+    footer p {margin-right: 0;}
+    header h2 {
+        font-size: 1.625em;
+        margin: .4em 0 .25em 0;
+    }
+}
+
+/* MOBILE PORTRAIT TO MOBILE LANDSCAPE */
+@media only screen and (max-width: 479px) {
+    header h2 {font-size: 1.375em; }
+    p { font-size: 0875em; }
+    h1, h2 {font-size: 1em; }
+    img {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    footer p {font-size: .6875em;}
+}
+
+/* PRINT RULE */
+@media print {
+    html { font-family: Arial, Helvetica, sans-serif; }
+}
+
+/* MAIN NAVIGATION STYLES */
+#navMenu {
+    display: flex;
+    background: gray;
+    height: 80px;
+    width: 100%
+}
+
+label.logo {
+    color: white;
+    font-size: 100%;
+    /* line-height: 90% */
+    padding: 2%;
+    font-weight: bold;
+}
+
+#navMenu ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+    width: 100%;
+}
+#navMenu ul li {
+    display: inline-flex;
+    width: 23%;
+    /* line-height: 80px; */
+    /* margin: 0 5px; */
+}
+#navMenu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    /** Padding above and below element **/
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+    text-transform: uppercase;
+}
+#navMenu ul li a.lastitem {border-right: none; }
+#navMenu ul li a.current {color: yellow; }
+
+main ul {
+
+}
+
+#socialMedia, a img {
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 20px;
+    height: 42px;
+}
+
+main h1 {
+    padding-left: 1%;
+}
+
+main h1 ul {
+    margin: 2em;
+    padding: 1%;
+    font-size: 180%;
+    color: slategray;
+    text-align: left;
+}
+
+main h2 {
+    border: 1px solid black;
+    margin: 2%;
+    clear: left;
+    padding: .25em;
+    font-size: 180%;
+    color: slategray;
+    text-align: left;
+}
+
+ #copyright {
+    font-size: 75%;
+    text-align: center;
+}
+
+#alignRight {
+    font-size: 100%;
+    padding-left: 2%;
+}
+
+#summary {
+    text-align: left;
+    padding: 0 0 0 50px;
+}
+
+ a:link { color: blue; }
+ a.active, a:hover, a:focus {
+     color: darkorange;
+ }
+
+ img.background {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     position: relative;
+ }
+/*
+ #memberBody {
+     font-family: Arial, Helvetica, sans-serif;
+     width: 90%;
+     height: 90%;
+     font-size: 100%;
+     max-width: 1024px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0;
+     border: 1em solid navy;
+ }
+
+ #memberMain {
+     float: left;
+     width: 50%;
+     border-right: 2px solid whitesmoke;
+ }
+
+ #memberAside {
+     display: flex;
+     padding-top: 5%;
+ }
+
+ #memberFooter {
+     padding: 2%;
+     clear: both;
+ }
+ */
+
+label {
+    text-align: right;
+}
+
+input {
+    margin: 1em;
+}
+
+#comments {
+    height: 5em;
+    width: 25em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+}
+
+.commentLabel {
+    margin-left: 1em;
+}
+
+input:required {
+    border-color: red;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LOGIN</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Login">
+    <meta name="keywords" content="Cyber Warfare Technician, OCO Red Team Operator, DCO Network and Host Analyst">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="IMAGES/cyberBranchInsignia.ico">
+    <link rel="stylesheet" href="STYLES/normalize.css">
+    <link rel="stylesheet" href="STYLES/cssStyle.css">
+</head>
+<body id="memberBody">
+<header>
+    <nav id="mobileMenu"></nav>
+    <nav id="navMenu">
+        <label class="logo">Cyber Network Defender</label>
+        <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="links.html">LINKS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="memberMain">
+    <img src="IMAGES/CyberCorpsInsignia.png" alt="Cyber Corps Inisgnia" class="background">
+    <form id="membersForm" action="login.html" method="post">
+        <fieldset>
+            <legend>Member Sign In</legend>
+            <label for="username">Username:</label>
+            <input id="username" type="text" autofocus maxlength="50"><br>
+            <label for="password">Password:</label>
+            <input id="password" type="password"><br>
+            <input id="signIn" type="submit" value="Sign In"><br>
+        </fieldset>
+    </form>
+    <form id="registrationForm" action="register.html" method="post">
+        <fieldset>
+            <legend>Registration</legend>
+            <input id="registration" type="submit" value="Create an Account">
+        </fieldset>
+    </form>
+    <form id="passwordResetForm" action="passwordReset.html" method="post">
+        <fieldset>
+            <legend>Account Help</legend>
+            <input id="passwordReset" type="submit" value="Forgot Password">
+        </fieldset>
+    </form>
+</main>
+<footer id="memberFooter">
+    <p id="copyright">&copy; Copyright 2020-2023 cnd.dev </p>
+</footer>
+</body>
+</html>

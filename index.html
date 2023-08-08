@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Landing Page">
+    <meta name="keywords" content="Cyber Warfare Technician, OCO Red Team Operator, DCO Network and Host Analyst">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="IMAGES/cyberBranchInsignia.ico">
+    <link rel="stylesheet" href="STYLES/normalize.css">
+    <link rel="stylesheet" href="STYLES/cssStyle.css">
+    <link rel="stylesheet" href="STYLES/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="JS/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#navMenu').slicknav({prependTo:"#mobileMenu"});
+            });
+        </script>
+</head>
+<body>
+    <header>
+        <nav id="mobileMenu"></nav>
+        <nav id="navMenu">
+            <label class="logo">Cyber Network Defender</label>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="members.html">MEMBERS</a></li>
+            </ul>
+        </nav>
+        <form method="get" action="https://duckduckgo.com/">
+            <input type="search" name="q" size="30" maxlength="255">
+            <input type="submit" id="search" value="Search">
+        </form>
+    </header>
+    <main>
+        <img src="IMAGES/CyberCorpsInsignia.png" alt="Cyber Corps Inisgnia" class="background">
+    </main>
+    <footer>
+        <p id="copyright">&copy; Copyright 2020-2023 cnd.dev </p>
+    </footer>
+</body>
+</html>
